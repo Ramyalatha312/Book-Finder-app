@@ -1,13 +1,19 @@
-## Working with AI
-
-This project was developed with guidance from ChatGPT (AI-assisted development).  
-You can view the full conversation here:  
-[ChatGPT Conversation Link](https://chatgpt.com/share/6901fa9f-f0e4-800d-9f85-40ed8dd904f8)
-
 # 📚 Book Finder App
 
-A simple and elegant **React** web application that allows users to search for books using the **Open Library API**.  
-Users can explore different book categories, search for specific titles, and view book details in a clean, responsive interface.
+A responsive React application that helps a user (Alex) search for books using the **Open Library API**.  
+Users can log in (mock), search by title, and browse six categories (Fiction, Technology, Kids, Science, History, Romance).
+
+---
+
+## 🚀 Live Demo
+https://ramyalatha312.github.io/Book-Finder-app/
+
+---
+
+## 💬 Working with AI
+This project was developed with guidance from ChatGPT.  
+View the development conversation here:  
+https://chatgpt.com/share/6901fa9f-f0e4-800d-9f85-40ed8dd904f8
 
 ---
 
@@ -31,7 +37,7 @@ Users can explore different book categories, search for specific titles, and vie
 | Styling | Styled Components |
 | API | [Open Library API](https://openlibrary.org/developers/api) |
 | HTTP Client | Axios |
-| Hosting | GitHub Pages |
+| Hosting | GitHub Pages | CodeSandBox
 
 ---
 
