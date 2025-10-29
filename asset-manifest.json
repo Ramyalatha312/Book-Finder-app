@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/book-finder-app/static/css/main.6e422d66.css",
-    "main.js": "/book-finder-app/static/js/main.1f76c29e.js",
-    "index.html": "/book-finder-app/index.html",
-    "main.6e422d66.css.map": "/book-finder-app/static/css/main.6e422d66.css.map",
-    "main.1f76c29e.js.map": "/book-finder-app/static/js/main.1f76c29e.js.map"
+    "main.css": "/Book-Finder-app/static/css/main.6e422d66.css",
+    "main.js": "/Book-Finder-app/static/js/main.1f76c29e.js",
+    "index.html": "/Book-Finder-app/index.html",
+    "main.6e422d66.css.map": "/Book-Finder-app/static/css/main.6e422d66.css.map",
+    "main.1f76c29e.js.map": "/Book-Finder-app/static/js/main.1f76c29e.js.map"
   },
   "entrypoints": [
     "static/css/main.6e422d66.css",
