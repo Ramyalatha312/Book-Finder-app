@@ -1,8 +1,8 @@
-## 💬 Working with AI (Level 1)
+## Working with AI
 
-This project was developed with guidance from **ChatGPT (AI-assisted development)**.  
+This project was developed with guidance from ChatGPT (AI-assisted development).  
 You can view the full conversation here:  
-👉 [ChatGPT Conversation Link](https://chatgpt.com/share/6901fa9f-f0e4-800d-9f85-40ed8dd904f8)
+[ChatGPT Conversation Link](https://chatgpt.com/share/6901fa9f-f0e4-800d-9f85-40ed8dd904f8)
 
 # 📚 Book Finder App
 
