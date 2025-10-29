@@ -1,0 +1,254 @@
+/* === General App Layout === */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+        url("https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1740&q=80") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.app-wrapper {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.3);
+    /* made lighter */
+    z-index: 0;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 900px;
+    padding: 30px;
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.35);
+    /* slightly lighter than before */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+/* === Header === */
+.header {
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    color: #ffda79;
+}
+
+/* === LOGIN PAGE === */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+}
+
+.login-container .header {
+    color: white;
+}
+
+.login-input {
+    width: 280px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(201, 181, 7);
+}
+
+.login-input::placeholder {
+    color: #d3b610;
+}
+
+.login-button {
+    width: 280px;
+    padding: 12px;
+    background: #ffb300;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.login-button:hover {
+    background: #ffaa00;
+    transform: scale(1.05);
+}
+
+.error-message {
+    color: #ff9999;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+/* === CATEGORY SECTION === */
+.category-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.category-block h2 {
+    color: #ffda79;
+    margin-bottom: 10px;
+}
+
+/* === SEARCH BAR === */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-input {
+    width: 60%;
+    max-width: 600px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+.search-input::placeholder {
+    color: #888;
+}
+
+/* === BOOK LIST === */
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 10px;
+}
+
+.book-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.book-cover {
+    width: 120px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-cover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.book-title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 10px 0 5px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 600px) {
+    .header {
+        font-size: 1.8rem;
+    }
+
+    .login-container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .login-input,
+    .login-button {
+        width: 80%;
+    }
+}
+
+.login-page {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.login-input {
+    padding: 8px;
+    width: 220px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-btn,
+.logout-btn,
+.category-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.logout-btn {
+    background-color: #dc3545;
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
